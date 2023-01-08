@@ -1,7 +1,8 @@
 #include "game.h"
-#include "graphics.h"
+#include "sgg/graphics.h"
 #include "config.h"
 #include <random>
+#include <cstring>
 
 void Game::spawnUfo()
 {
@@ -894,7 +895,7 @@ void Game::drawGameplay()
 	br.fill_color[2] = 1.0f;
 	char info[40];
 	//sprintf_s(info, "(%5.2f, %5.2f)", player->getPosX(), player->getPosY());
-	sprintf_s(info, "SCORE: %d", score);
+	sprintf(info, "SCORE: %d", score);
 	graphics::drawText(30, 30, 25, info, brush1);
 
 	//remaining lives
@@ -933,7 +934,7 @@ void Game::drawGameOver()
 	br.fill_color[1] = 1.0f;
 	br.fill_color[2] = 1.0f;
 	char info[40];
-	sprintf_s(info, "FINAL SCORE: %d", score);
+	sprintf(info, "FINAL SCORE: %d", score);
 	graphics::drawText(CANVAS_WIDTH/2 - 120.0f, CANVAS_HEIGHT * 0.1f, 25, info, brush1);
 }
 //

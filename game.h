@@ -30,7 +30,7 @@ class Game
 	bool pbullet_exists = false;
 
 	Enemy * enemy = nullptr;
-	Enemy * enemies[11][5];
+	Enemy * enemies[11][5] {};
 	bool enemy_transition = false;
 	void spawnEnemy();
 	void enemyAdjust(int t);
@@ -61,11 +61,10 @@ class Game
 	void resetpbCounter() { pbCounter = 0; }
 	int bonus;
 	//Barriers + flag + create
-	Barrier * piece = nullptr;
-	Barrier * barrier1[5][4];
-	Barrier * barrier2[5][4];
-	Barrier * barrier3[5][4];
-	Barrier * barrier4[5][4];
+	Barrier * barrier1[5][4] {};
+	Barrier * barrier2[5][4] {};
+	Barrier * barrier3[5][4] {};
+	Barrier * barrier4[5][4] {};
 	bool barriers_initialized = false;
 	void createBarriers(); 
 

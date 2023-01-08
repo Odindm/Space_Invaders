@@ -1,7 +1,8 @@
 #include "player.h"
-#include "graphics.h"
+#include "sgg/graphics.h"
 #include "config.h"
 #include "game.h"
+#include <cmath>
 
 
 Player::Player()

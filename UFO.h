@@ -1,6 +1,6 @@
 #pragma once
 #include "gameObject.h"
-#include "graphics.h"
+#include "sgg/graphics.h"
 
 class UFO : public GameObject, public Collidable
 {

@@ -1,4 +1,4 @@
-#include "graphics.h"
+#include "sgg/graphics.h"
 #include "game.h"
 #include "config.h"
 
